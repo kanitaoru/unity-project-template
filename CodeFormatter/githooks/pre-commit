@@ -1,0 +1,13 @@
+#!/bin/sh
+
+RESULT=`CodeFormatter/bin/format_all`
+
+# フォーマットで差分がでたファイルがあったらコミットを阻止する
+if [[ $RESULT =~ Formatted ]]; then
+    FILES=`echo "$RESULT" | grep ^Formatted | wc -l`
+    echo "$RESULT"
+    echo "$FILES files formatted. commit rejected.";
+    exit 1;
+else
+    echo "OK";
+fi
