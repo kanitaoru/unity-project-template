@@ -5,8 +5,8 @@ string_test: test
 array_test:
 - one
 - two
-- twhree
+- three
 struct_test:
   member1: member1
   member2: member2
-  empty_arrat: []
+  empty_array: []
