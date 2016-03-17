@@ -1,0 +1,12 @@
+# yaml読み込みテスト
+bool_true: true
+bool_false: false
+string_test: test
+array_test:
+- one
+- two
+- twhree
+struct_test:
+  member1: member1
+  member2: member2
+  empty_arrat: []
