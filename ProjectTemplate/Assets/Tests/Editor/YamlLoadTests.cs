@@ -23,15 +23,26 @@ namespace UnitTests
             public string[] empty_array { get; set; }
         }
 
+        string yamlText = @"
+bool_true: true
+bool_false: false
+string_test: test
+array_test:
+- one
+- two
+- three
+struct_test:
+  member1: member1
+  member2: member2
+  empty_array: []
+";
+
         Sample sample = null;
 
         [TestFixtureSetUp]
         public void Setup()
         {
-            var yamlPath = System.Environment.CurrentDirectory + "/../BuildConfigs/sample.yaml";
-            var yaml = System.IO.File.ReadAllText(yamlPath);
-            var reader = new System.IO.StringReader(yaml);
-
+            var reader = new System.IO.StringReader(yamlText);
             var deserializer = new YamlDotNet.Serialization.Deserializer(
                 namingConvention: new YamlDotNet.Serialization.NamingConventions.UnderscoredNamingConvention()
             );
