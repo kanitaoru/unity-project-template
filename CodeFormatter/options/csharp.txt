@@ -5,6 +5,8 @@
 mode=cs
 # allmanスタイルにする
 style=allman
+# タブを空白に変換する
+convert-tabs
 # 4 文字インデント、タブを空白として保存
 indent=spaces=4
 # namespace文の中をインデントする
@@ -26,7 +28,7 @@ pad-oper
 # originalファイルを生成しない
 suffix=none
 # if, for, while文の前後に空行を入れる
-break-blocks
+# break-blocks
 # コメントもインデントする
 indent-col1-comments
 # 変更がなかったファイルは表示しない
@@ -35,6 +37,3 @@ formatted
 lineend=linux
 # 除外ファイルが見つからなかった時のエラーを無視する
 ignore-exclude-errors
-
-# VSCodeはフォーマットしない
-exclude="VSCode.cs"

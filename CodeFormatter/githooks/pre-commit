@@ -1,6 +1,6 @@
 #!/bin/sh
 
-RESULT=`CodeFormatter/bin/format_all`
+RESULT=`CodeFormatter/astyle/format_only_modified.sh`
 
 # フォーマットで差分がでたファイルがあったらコミットを阻止する
 if [[ $RESULT =~ Formatted ]]; then
