@@ -1,0 +1,5 @@
+# mobileprovision は CMS 形式でエンコードされているので、
+# git config diff.cms-encoded.textconv 'security cms -D -i'
+# で差分を確認できるようになる
+*.mobileprovision diff=cms-encoded
+

@@ -31,4 +31,5 @@ sysinfo.txt
 *.apk
 *.unitypackage
 
-
+### VSCodeプラグインはAssetStoreから都度ダウンロードさせるので無視
+VSCode*
