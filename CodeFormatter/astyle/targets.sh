@@ -3,6 +3,7 @@
 
 TARGETS=()
 # TARGETS+=("ProjectTemplate/Assets/Scripts/*.cs")
+TARGETS+=("ProjectTemplate/Assets/AppBuilder/*.cs")
 TARGETS+=("ProjectTemplate/Assets/Tests/*.cs")
 
 # using

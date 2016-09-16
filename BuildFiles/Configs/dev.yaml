@@ -1,0 +1,20 @@
+﻿# for Develop
+company_name: CompanyName.
+product_name: ProjectTemplate
+define_symbols:
+- DEV
+development_mode: true
+app_version: 1.0.0
+build_number: 2 # iOSではBuild, AndroidではBundleVersionCode
+ios:
+  xcode_project_name: ProjectTemplate_Dev
+  bundle_identifier: com.taorulab.projecttemplate
+  provisioning_profile: dummy.mobileprovision
+android:
+  android_project_name: ProjectTemplate_Dev
+  apk_file_name: ProjectTemplate_Dev.apk
+  bundle_identifier: com.taorulab.projecttemplate
+  keystore_name: dummy-keystore
+  keystore_password: keysotre-pass
+  key_alias_name: dummy-key-alias
+  key_alias_password: keyalias-pass
